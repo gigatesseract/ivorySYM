@@ -17,9 +17,13 @@ A GUI simulator for verilog
  **To add:**
  * Save and open features, showing current file name, etc.
  * Working with multiple files
- * UI design
  * Anything other idea that pops up.
+ * UI design
+ 
+ 
+ ![showing error](error.png)
+ ![showing output](output.png)
  
  
  _Feel free to contribute_
- 
+ _Open up a PR or issues link if you find any errors._
