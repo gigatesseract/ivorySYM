@@ -18,10 +18,18 @@ A GUI simulator for verilog
  * Save and open features, showing current file name, etc.
  * Working with multiple files
  * Anything other idea that pops up.
- * UI design
+ * UI design     
  
  
- ![showing error](error.png)
+ Before rectification of the error:
+ 
+ 
+ ![showing error](error.png)    
+ 
+ 
+ 
+ After rectification of the error, + output:
+ 
  ![showing output](output.png)
  
  
