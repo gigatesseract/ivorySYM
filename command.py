@@ -1,16 +1,15 @@
 import os
 import subprocess
-from Tkinter import *
+from tkinter import *
 
 
-cmd = [ 'iverilog', '-o', 'temp', 'temp.v' ]
-rn = ['vvp' ' temp']
+cmd = [ "iverilog", "-o", "temp", "temp.v" ]
+rn = ["vvp" " temp"]
 
 def compile(code, log):
-	string =  code.get('1.0', 'end-1c')
-	file = open('temp.v', 'w')
-	file.write(string)
-	file.close()
+	string =  code.get("1.0", "end-1c")
+    with open("temp.v", "w") as file:
+        file.write(string)
 
 	output,error = subprocess.Popen(cmd,stdout = subprocess.PIPE, stderr=subprocess.PIPE).communicate()
 	log.config(state=NORMAL)
@@ -19,7 +18,7 @@ def compile(code, log):
  	log.config(state=DISABLED)
 
 def run(log):
-	output,error = subprocess.Popen(rn,stdout = subprocess.PIPE, stderr=subprocess.PIPE, shell = 'true').communicate()
+	output,error = subprocess.Popen(rn,stdout = subprocess.PIPE, stderr=subprocess.PIPE, shell = "true").communicate()
 	log.config(state=NORMAL)
 	log.insert(END,error)
 	log.insert(END, output)
