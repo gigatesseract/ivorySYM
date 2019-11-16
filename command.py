@@ -14,16 +14,16 @@ def compile(code, log):
 
 	output,error = subprocess.Popen(cmd,stdout = subprocess.PIPE, stderr=subprocess.PIPE).communicate()
 	log.config(state=NORMAL)
- 	log.insert(END,error)
- 	log.insert(END, output)
- 	log.config(state=DISABLED)
+	log.insert(END,error)
+	log.insert(END, output)
+	log.config(state=DISABLED)
 
 def run(log):
 	output,error = subprocess.Popen(rn,stdout = subprocess.PIPE, stderr=subprocess.PIPE, shell = "true").communicate()
 	log.config(state=NORMAL)
 	log.insert(END,error)
 	log.insert(END, output)
- 	log.config(state=DISABLED)
+	log.config(state=DISABLED)
 
 
 	
