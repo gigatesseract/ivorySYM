@@ -3,12 +3,12 @@ import subprocess
 from Tkinter import *
 
 
-cmd = [ 'iverilog', '-o', 'temp', 'temp.v' ]
-rn = ['vvp', 'temp']
+cmd = [ "iverilog", "-o", "temp", "temp.v" ]
+rn = ["vvp", "temp"]
 
 def compile(code, log):
-	string =  code.get('1.0', 'end-1c')
-	file = open('temp.v', 'w')
+	string =  code.get("1.0", "end-1c")
+	file = open("temp.v", "w")
 	file.write(string)
 	file.close()
 
@@ -19,7 +19,7 @@ def compile(code, log):
  	log.config(state=DISABLED)
 
 def run(log):
-	output,error = subprocess.Popen(rn,stdout = subprocess.PIPE, stderr=subprocess.PIPE, shell = 'true').communicate()
+	output,error = subprocess.Popen(rn,stdout = subprocess.PIPE, stderr=subprocess.PIPE, shell = "true").communicate()
 	log.config(state=NORMAL)
 	log.insert(END,error)
 	log.insert(END, output)
