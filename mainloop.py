@@ -1,5 +1,5 @@
-import Tkinter as t
-from Tkinter import *
+import tkinter as t
+from tkinter import *
 import command as c
 
 m = t.Tk(className = "IvorySym: GUI for iverilog")

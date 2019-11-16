@@ -1,6 +1,6 @@
 import os
 import subprocess
-from Tkinter import *
+from tkinter import *
 
 
 cmd = [ "iverilog", "-o", "temp", "temp.v" ]
