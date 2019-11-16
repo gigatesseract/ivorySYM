@@ -15,7 +15,7 @@ run.pack()
 quit.pack()
 string = ""
 i = 1
-while(i<=200):
+while i <= 200 :
  	string = string + str(i) + "\n"
 	i = i + 1
 
@@ -26,8 +26,8 @@ while(i<=200):
 code.insert(END, "% your code goes here")
 # linenumber.insert(END, string);
 # linenumber.pack(side = LEFT) 
-code.pack(side  = LEFT)
-log.pack(side = LEFT)
+code.pack(side  = t.LEFT)
+log.pack(side = t.LEFT)
 
 
 m.mainloop()
