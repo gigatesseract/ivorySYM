@@ -22,12 +22,12 @@ while i <= 200 :
 	i = i + 1
 
 
-# linenumber = t.Text(m, highlightcolor = "blue", highlightbackground = "gray", width = 50)
+linenumber = t.Text(m, highlightcolor = "blue", highlightbackground = "gray", width = 5)
 
-# code = t.Text(m, highlightcolor = "blue", highlightbackground = "gray");
+code = t.Text(m, highlightcolor = "blue", highlightbackground = "gray")
 code.insert(END, "% your code goes here")
-# linenumber.insert(END, string);
-# linenumber.pack(side = LEFT) 
+linenumber.insert(END, string)
+linenumber.pack(side = LEFT) 
 code.pack(side = t.LEFT)
 log.pack(side = t.LEFT)
 
