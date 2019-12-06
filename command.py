@@ -4,7 +4,7 @@ from tkinter import *
 
 
 cmd = ["iverilog", "-o", "temp", "temp.v"]
-rn = ["vvp" " temp"]
+rn = ["vvp", "temp"]
 
 
 def compile(code, log):

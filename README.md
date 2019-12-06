@@ -3,8 +3,8 @@ A GUI simulator for verilog
 
 
 ### Building with
-* Python 2.7.15rc1
-* Tkinter
+* Python 3
+* tkinter
 
 
 #### Run
